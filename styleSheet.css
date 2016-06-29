@@ -1,0 +1,23 @@
+.axis text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+  }
+  .axis .label {
+    font-size: 20pt;
+  }
+
+  .axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis text {
+    font-size: 0pt;
+    font-weight: bold;
+  }
+  .color-legend text {
+      font-family: 'Open Sans', sans-serif;
+      margin-left: 10px;
+      font-size: 9pt;
+    }

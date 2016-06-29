@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JQuery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styleSheet.css" media="screen" title="no title" charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row well well-sm">
+    <h1>Jquery Assignment</h1>
+  </div>
+  <div class="row">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#graph1">Graph for Age-wise Literate population</a></li>
+      <li><a data-toggle="tab" href="#graph2">Graph for Education Category wise</a></li>
+    </ul>
+
+    <div class="tab-content" >
+      <div id="graph1" class="tab-pane fade in active">
+          <div class="row">
+            <div class="col-md-4 table-responsive" style="overflow:auto;max-height:600px">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Age Group</th>
+                    <th>Poulation</th>
+                    <th>Remove</th>
+                  </tr>
+                </thead>
+                <tbody id="information-1">
+                  <tr>
+                    <td><input type ="text" class="form-control" id="x-g1"></td>
+                    <td><input type ="number" class="form-control" id="y-g1"></td>
+                    <td><button type="button" class="btn btn-success" name="button" id="add|g1">AddData</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-7" id="graphRender-1" style="overflow:auto;max-height:600px">  </div>
+          </div>
+      </div>
+      <div id="graph2" class="tab-pane fade">
+        <div class="row">
+          <div class="col-md-4 table-responsive" style="overflow:auto;max-height:600px">
+            <table class="table table-hover" style="overflow:auto;max-height:500px">
+              <thead>
+                <tr>
+                  <th>Education Group</th>
+                  <th>Poulation</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody id="information-2">
+                <tr>
+                  <td><input type ="text" class="form-control" id="x-g2"></td>
+                  <td><input type ="number" class="form-control" id="y-g2"></td>
+                  <td><button type="button" class="btn btn-success" name="button" id="add|g2">AddData</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-7" id="graphRender-2" style="overflow:auto;max-height:600px"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3-legend/1.1.0/d3-legend.js"></script>
+<script src = "code.js">
+</script>
+<script src = "ageGraph.js">
+</script>
+</body>
+</html>
